@@ -10,7 +10,7 @@
 
 @layer components {
   .custom_text_size {
-    @apply 2xl:text-[20px] md:text-[16px] 2xs:text-[12px] text-[10px];
+    @apply 2xl:text-[20px] md:text-[16px] 2xs:text-[12px] text-[8px];
   }
   .coupon_card {
     background: linear-gradient(135deg, #fff 0%, rgba(174, 174, 174, 0.5) 100%);

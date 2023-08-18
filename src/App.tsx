@@ -8,23 +8,28 @@ import InputBar from "./components/InputBar";
 function App() {
   return (
     <div className="w-full h-auto flex flex-col custom_text_size">
-      <section className="flex justify-between">
-        <div className="pt-[1.5em] pl-[1.5em] flex flex-col shrink-0">
-          <Logo />
-          <div className="w-fit pl-[5em] font-bold flex flex-col">
-            <h1 className="text-[4em] bg-clip-text text-transparent bg-[url(./assets/gradient1.png)] w-[11ch] bg-cover leading-[110%]">
-              WELCOME TO MOMPROS
-            </h1>
-            <BlankText width={"80%"} />
-            <BlankText width={"60%"} />
-            <BlankText width={"40%"} />
-            <BlankText width={"60%"} />
+      <div className="@container">
+        <section className="flex justify-between @[50em]:flex-row flex-col @[50em]:gap-0 gap-[3em] @[50em]:items-start items-center">
+          <div className="pt-[1.5em] @[50em]:pl-[1.5em] flex flex-col @[50em]:items-start items-center shrink-0">
+            <Logo />
+            <div className="w-fit @[50em]:pl-[5em] font-bold flex flex-col @[50em]:text-start text-center  @[50em]:items-start items-center">
+              <h1 className="text-[4em] bg-clip-text text-transparent bg-[url(./assets/gradient1.png)] w-[11ch] bg-cover leading-[110%]">
+                WELCOME TO MOMPROS
+              </h1>
+              <BlankText width={"80%"} />
+              <BlankText width={"60%"} />
+              <BlankText width={"40%"} />
+              <BlankText width={"60%"} />
+            </div>
           </div>
-        </div>
-        <div className="w-[50%] h-auto object-cover shadow-[0_2.75px_120px_20px_rgba(214,77,95,0.45)] rounded-bl-[5em] overflow-hidden flex items-stretch">
-          <img src={heroBg} className="h-auto bg-blue-400 object-cover" />
-        </div>
-      </section>
+          <div className="@[50em]:w-[50%] w-fit @[50em]:h-auto h-[20em] object-cover shadow-[0_2.75px_120px_20px_rgba(214,77,95,0.45)] @[50em]:rounded-[0] @[50em]:rounded-bl-[5em] rounded-[3em] overflow-hidden flex items-stretch">
+            <img
+              src={heroBg}
+              className="@[50em]:h-auto h-full w-full bg-blue-400 object-cover"
+            />
+          </div>
+        </section>
+      </div>
       <section className="mt-[3em]">
         <h2 className="text-center text-[3em] font-semibold ">
           PLANS & PRICING

@@ -1,4 +1,3 @@
-import React from "react";
 import { sub1Image } from "../assets";
 import BlankText from "./BlankText";
 
